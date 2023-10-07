@@ -28,5 +28,9 @@ namespace P2_2_Figuras
         {
             return System.Math.PI * System.Math.Pow(getRadio(), 2);
         }
+        public override string ToString()
+        {
+            return $"FIGURA CIRCULO Radio:{getRadio()} Color: {_color}";
+        }
     }
 }

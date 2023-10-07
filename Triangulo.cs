@@ -28,5 +28,9 @@ namespace P2_2_Figuras
         {
             return (System.Math.Sqrt(3) / 4) * System.Math.Pow(getLado(), 2);
         }
+        public override string ToString()
+        {
+            return $"FIGURA TRIANGULO Lado:{getLado()} Color: {_color}";
+        }
     }
 }

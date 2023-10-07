@@ -36,5 +36,9 @@ namespace P2_2_Figuras
         {
             return getLargo * getAncho;
         }
+        public override string ToString()
+        {
+            return $"FIGURA RECTANGULO Alto:{getLargo()} Ancho:{getAncho()} Color: {_color}";
+        }
     }
 }
