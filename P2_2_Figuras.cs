@@ -36,8 +36,29 @@ public class P2_2_Figuras
 
     // Modifico el parametro del triangulo 
     triangulo.setLado(4);
-    Console.WriteLine(triangulo.ToString() + "\n_____________________________________________________________________");
+    Console.WriteLine(triangulo.ToString() + "\n_____________________________________________________________________\n\n\n\n");
 
+    //Creo lista de figuras
+    List<Figura> lista = new List<Figura>();
+    //Creacion de 6 figuras
+    Rectangulo rec1 = new Rectangulo(Color.FromArgb(255, 50, 20, 34), 3, 3.9);
+    Rectangulo rec2 = new Rectangulo(Color.FromArgb(255, 60, 30, 44), 4, 4.9);
+    Circulo cir1 = new Circulo(Color.FromArgb(255, 50, 20, 34), 3);
+    Circulo cir2 = new Circulo(Color.FromArgb(255, 60, 30, 44), 4);
+    Triangulo tri1 = new Triangulo(Color.FromArgb(255, 50, 20, 34), 3);
+    Triangulo tri2 = new Triangulo(Color.FromArgb(255, 60, 30, 44), 4);
+    //Añado las instancias a la lista creada anteriormente
+    lista.Add(rec1);
+    lista.Add(rec2);
+    lista.Add(cir2);
+    lista.Add(cir1);
+    lista.Add(tri1);
+    lista.Add(tri2);
+    //Recorro la lista
+    foreach (Figura f in lista)
+    {
+      Console.WriteLine(f.ToString() + " Area: " + f.GetArea());
+    }
   }
 
 }
