@@ -10,15 +10,15 @@ namespace P2_2_Figuras
         public Rectangulo(Color color, double largo, double ancho)
         {
             _color = color;
-            Largo = largo;
-            Ancho = ancho;
+            _largo = largo;
+            _ancho = ancho;
         }
         //getters
-        public double getLargo
+        public double getLargo()
         {
             return _largo;
         }
-        public double getAncho
+        public double getAncho()
         {
             return _ancho;
         }
@@ -34,7 +34,7 @@ namespace P2_2_Figuras
 
         public override double GetArea()
         {
-            return getLargo * getAncho;
+            return getLargo() * getAncho();
         }
         public override string ToString()
         {
