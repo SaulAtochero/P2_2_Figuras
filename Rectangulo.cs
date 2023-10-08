@@ -22,7 +22,7 @@ namespace P2_2_Figuras
         {
             return _ancho;
         }
-        public Color getColor()
+        public override Color getColor()
         {
             return _color;
         }
@@ -35,9 +35,9 @@ namespace P2_2_Figuras
         {
             _ancho = ancho;
         }
-        public void setColor(Color color)
+        public override void setColor(Color value)
         {
-            _color = color;
+            _color = value;
         }
 
         public override double GetArea()
