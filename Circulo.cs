@@ -17,11 +17,19 @@ namespace P2_2_Figuras
         {
             return _radio;
         }
+        public Color getColor()
+        {
+            return _color;
+        }
 
         //setter
-        public void setRadio(double value)
+        public void setRadio(double radio)
         {
-            _radio = value;
+            _radio = radio;
+        }
+        public void setColor(Color color)
+        {
+            _color = color;
         }
 
         public override double GetArea()

@@ -17,11 +17,19 @@ namespace P2_2_Figuras
         {
             return _lado;
         }
+        public Color getColor()
+        {
+            return _color;
+        }
 
         //setter
-        public void setLado(double value)
+        public void setLado(double lado)
         {
-            _lado = value;
+            _lado = lado;
+        }
+        public void setColor(Color color)
+        {
+            _color = color;
         }
 
         public override double GetArea()

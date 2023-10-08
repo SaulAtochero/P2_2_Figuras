@@ -22,14 +22,22 @@ namespace P2_2_Figuras
         {
             return _ancho;
         }
-        //setters
-        public void setLargo(double value)
+        public Color getColor()
         {
-            _largo = value;
+            return _color;
         }
-        public void setAncho(double value)
+        //setters
+        public void setLargo(double largo)
         {
-            _ancho = value;
+            _largo = largo;
+        }
+        public void setAncho(double ancho)
+        {
+            _ancho = ancho;
+        }
+        public void setColor(Color color)
+        {
+            _color = color;
         }
 
         public override double GetArea()
