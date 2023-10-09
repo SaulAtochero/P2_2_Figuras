@@ -8,6 +8,6 @@ internal abstract class Figura
   protected Color _color;
 
   public abstract double GetArea();
-  public abstract Color getColor();
-  public abstract void setColor(Color color);
+  public abstract Color GetColor();
+  public abstract void SetColor(Color color);
 }

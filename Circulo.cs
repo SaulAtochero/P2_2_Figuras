@@ -17,7 +17,7 @@ namespace P2_2_Figuras
         {
             return _radio;
         }
-        public override Color getColor()
+        public override Color GetColor()
         {
             return _color;
         }
@@ -27,7 +27,7 @@ namespace P2_2_Figuras
         {
             _radio = radio;
         }
-        public override void setColor(Color color)
+        public override void SetColor(Color color)
         {
             _color = color;
         }

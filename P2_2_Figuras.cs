@@ -62,9 +62,16 @@ public class P2_2_Figuras
     //Recorro la lista, pero cambiando el color a todas la figuras
     foreach (Figura f in lista)
     {
-      f.setColor(Color.FromArgb(245, 40, 145, 200));
+      f.SetColor(Color.FromArgb(245, 40, 145, 200));
       Console.WriteLine(f.ToString() + " Area: " + f.GetArea());
     }
+    //Recorrer una lista e ir sumando las areas de todas las figuras
+    Double area = 0;
+    foreach (Figura f in lista)
+    {
+      area += f.GetArea();
+    }
+    Console.WriteLine("El area total de todas las figuras es: " + area);
   }
 
 }
