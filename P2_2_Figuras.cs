@@ -60,10 +60,9 @@ public class P2_2_Figuras
       Console.WriteLine(f.ToString() + " Area: " + f.GetArea());
     }
     //Recorro la lista, pero cambiando el color a todas la figuras
-    Color Co = new Color(color.fromargb(245, 40, 145, 200));
     foreach (Figura f in lista)
     {
-      f.setColor(co);
+      f.setColor(Color.FromArgb(245, 40, 145, 200));
       Console.WriteLine(f.ToString() + " Area: " + f.GetArea());
     }
   }

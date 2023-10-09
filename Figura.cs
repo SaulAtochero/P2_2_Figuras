@@ -9,5 +9,5 @@ internal abstract class Figura
 
   public abstract double GetArea();
   public abstract Color getColor();
-  public abstract void setColor();
+  public abstract void setColor(Color color);
 }
